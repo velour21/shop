@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>e-commerce</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/vb.jpg" width="400px" heiclass="logo">
+    <h1>Boutique 5 étoiles</h1>
+    <p class="slogan">Habillez vos enfants avec style !</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Bienvenue chez IEPA Shop</h2>
+      <p>Découvrez notre collection colorée et tendance pour les petits.</p>
+      <video id="myVideo" autoplay muted>
+        <source src="images/bes.mp4" type="video/mp4">
+      </video>
+      
+      <button onclick="unmuteVideo()">Activer le son</button>
+      
+      <script>
+      function unmuteVideo() {
+        const video = document.getElementById('myVideo');
+        video.muted = false;
+        video.play();
+      }
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IEPA Shop. Tous droits réservés. père fondateur NKONO Christian</p>
+</footer>
+</body>
+</html>
